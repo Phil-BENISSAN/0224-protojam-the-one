@@ -5,7 +5,7 @@ function HomeCard({data}) {
     <div className="card-container">
       <div className="card">
         <div className="img-content">
-            <img src="src/assets/3-essential-yoga-poses-worth-daily.jpg" alt="" />
+            <img src={data.image}alt="" />
         </div>
         <div className="content">
           <h2 className="heading">Jour {data.id}</h2>
