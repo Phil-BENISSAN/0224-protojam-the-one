@@ -18,7 +18,7 @@ function DailyCard() {
             src="https://img.freepik.com/photos-gratuite/full-shot-woman-doing-yoga-pose-exterieur_23-2149123080.jpg?w=900&t=st=1715861423~exp=1715862023~hmac=82b3c3d62e2bc037f2eb86f33a21b06f646a157f96a88ff95067a3fd39d57300"
             alt="a yoga position"
           />
-          <p className="positionTxt">
+          <p className="description">
             From a seated position the feet are lifted up so that the thighs are
             angled about 45-50 degrees relative to the earth. The tailbone is
             lengthened into the earth and the pubis pulls toward the navel. The
@@ -28,7 +28,13 @@ function DailyCard() {
             the skull lifts lightly away from the back of the neck. Gaze is
             forward.
           </p>
-       
+          <p className="instructions">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quidem
+            aliquam quos quis recusandae a at similique soluta. Fuga velit eaque
+            assumenda eligendi sed fugiat, adipisci delectus dolor similique
+            ipsam?
+          </p>
+
           {/* <MapContainer
             center={[51.505, -0.09]}
             zoom={13}
@@ -44,7 +50,6 @@ function DailyCard() {
               </Popup>
             </Marker>
           </MapContainer> */}
-          
         </article>
       </div>
     </div>

@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.positionTxt {
+.description{
   padding: 1rem;
   font-size: var(--fontSize);
 }
