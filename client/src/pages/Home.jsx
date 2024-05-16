@@ -1,5 +1,6 @@
 // import { Link, useRouteLoaderData } from "react-router-dom";
 import HomeCard from "../components/HomeCard";
+import {Link} from "react-router-dom";
 import "./Home.css";
 
 const postureExemple = [
@@ -70,20 +71,13 @@ function Home() {
 
   return (
     <>
-      {/* <ul className="posture-list" id="posture-list">
-        {postureExemple.map((posture) => (
-          <li className="postureCard" key={posture.id}>
-            <Link  to={`/${posture.id}`}>
-             <HomeCard data={posture}/>
-            </Link>
-          </li>
-        ))}
-      </ul> */}
       <div className="homeCardContainer">
         <ul className="posture-list" id="posture-list">
           {postureExemple.map((posture) => (
             <li className="postureCard" key={posture.id}>
+              <Link  to={`/${posture.id}`}>
               <HomeCard data={posture} />
+              </Link>
             </li>
           ))}
         </ul>
