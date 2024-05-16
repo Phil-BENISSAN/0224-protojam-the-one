@@ -1,4 +1,3 @@
-// import { Link, useRouteLoaderData } from "react-router-dom";
 import HomeCard from "../components/HomeCard";
 import { Link, useLoaderData } from "react-router-dom";
 import "./Home.css";

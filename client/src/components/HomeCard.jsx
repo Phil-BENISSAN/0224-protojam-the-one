@@ -6,7 +6,7 @@ function HomeCard({ data }) {
     <div className="card-container">
       <div className="card">
         <div className="img-content">
-          <img src={data.image} alt="" />
+          <img src={data.image} alt="posture" />
         </div>
         <div className="content">
           <h2 className="heading">Jour {data.id}</h2>
