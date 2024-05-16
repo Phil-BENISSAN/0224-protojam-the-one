@@ -10,7 +10,6 @@ import "../pages/DailyCard.css";
 function DailyCard({ yoga }) {
 const{nom,description,instructions}=yoga
 
-function DailyCard() {
   return (
     <div className="container">
       <div className="card">
