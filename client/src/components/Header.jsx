@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <div className="menu-bg" id="menu-bg"></div>
       <div className='logoContainer'>
-      <h1>Yoga challenge</h1>
+      <h1 className='title'>Yoga challenge</h1>
       <img src="src\assets\Logo_Yoga.png" alt="return to homepage" className='Logo_yoga'/>
       </div>
       </header>

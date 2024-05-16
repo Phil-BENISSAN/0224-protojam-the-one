@@ -1,7 +1,13 @@
+import { useLoaderData } from "react-router-dom"
+import DailyCard from "../components/DailyCard.jsx"
 
 function DailyPage() {
+  const postureData = useLoaderData();
+  
   return (
-    <div>DailyPage</div>
+  <>
+    <DailyCard data={postureData}/>          
+    </>
   )
 }
 
