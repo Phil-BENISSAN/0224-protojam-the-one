@@ -10,11 +10,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    loader: () =>
-      fetch("")
-        .then((res) => res.json())
-        .then((data) => data)
-        .catch((error) => console.error(error)),
+    // loader: () =>
+    //   fetch("")
+    //     .then((res) => res.json())
+    //     .then((data) => data)
+    //     .catch((error) => console.error(error)),
     id: "app",
     children: [
       {
@@ -24,11 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <DailyPage />,
-        loader: ({ params }) =>
-          fetch(`http://localhost:3310/api/cupcakes/${params.id}`)
-            .then((res) => res.json())
-            .then((data) => data)
-            .catch((err) => console.error(err)),
+        // loader: ({ params }) =>
+        //   fetch(`http://localhost:3310/api/cupcakes/${params.id}`)
+        //     .then((res) => res.json())
+        //     .then((data) => data)
+        //     .catch((err) => console.error(err)),
       },
     ],
   },
