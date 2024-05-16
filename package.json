@@ -1,0 +1,14 @@
+{
+  "name": "0224-protojam-the-one",
+  "version": "1.0.0",
+  "description": "Ceci est le template pour le protojam de mai 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "paquet": "^1.4.0"
+  }
+}
