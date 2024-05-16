@@ -10,11 +10,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    // loader: () =>
-    //   fetch("")
-    //     .then((res) => res.json())
-    //     .then((data) => data)
-    //     .catch((error) => console.error(error)),
+    loader: () =>
+      fetch("http://localhost:8000/")
+        .then((res) => res.json())
+        .then((data) => data)
+        .catch((error) => console.error(error)),
     id: "app",
     children: [
       {
@@ -24,11 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/:id",
         element: <DailyPage />,
-        // loader: ({ params }) =>
-        //   fetch(`https://yoga-api-nzy4.onrender.com/v1${params.id}`)
-        //     .then((res) => res.json())
-        //     .then((data) => data)
-        //     .catch((err) => console.error(err)),
+        loader: ({ params }) =>
+          fetch(`http://localhost:8000/${params.id}`)
+            .then((res) => res.json())
+            .then((data) => data)
+            .catch((err) => console.error(err)),
       },
     ],
   },

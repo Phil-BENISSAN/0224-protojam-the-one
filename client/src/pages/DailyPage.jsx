@@ -1,7 +1,7 @@
-
+import DailyCard from "../components/DailyCard.jsx"
 function DailyPage() {
   return (<>
-    <div>DailyPage</div>
+    <DailyCard />
     </>
   )
 }
