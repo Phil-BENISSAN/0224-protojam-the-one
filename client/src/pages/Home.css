@@ -1,0 +1,11 @@
+.homeCardContainer{
+display: flex;
+justify-content: center;
+
+}
+.posture-list{
+   list-style-type: none;
+}
+.postureCard{
+    margin-top: 2rem;
+}
