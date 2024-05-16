@@ -1,8 +1,9 @@
-import React from 'react'
+
+import DailyCard from '../components/DailyCard'
 
 function Home() {
   return (
-    <div>Home</div>
+    <DailyCard />
   )
 }
 

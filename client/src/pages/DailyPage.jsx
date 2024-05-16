@@ -1,8 +1,8 @@
-import React from 'react'
 
 function DailyPage() {
-  return (
+  return (<>
     <div>DailyPage</div>
+    </>
   )
 }
 

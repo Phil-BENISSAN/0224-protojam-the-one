@@ -1,112 +1,62 @@
-import React from 'react'
+// import PropTypes from "prop-types";
+import "../pages/DailyCard.css";
+// import {
+//   MapContainer,
+//   TileLayer,
+//   Marker,Popup
+// } from 'https://cdn.esm.sh/react-leaflet'
 
 function DailyCard() {
   return (
-<section id="shopify-section-template--22020828430661__sejour-address" class="shopify-section section">
-
-
-
-<link href="//namastrip.com/cdn/shop/t/3/assets/section-sejour-address.css?v=136841942013841311751669662973" rel="stylesheet" type="text/css" media="all">
-<style data-shopify="">.section-template--22020828430661__sejour-address-padding {
-    padding-top: 36px;
-    padding-bottom: 32px;
-  }
-
-  @media screen and (min-width: 1000px) {
-    .section-template--22020828430661__sejour-address-padding {
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
-
-    
-      .section-template--22020828430661__sejour-address-borders {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-      }
-    
-
-    
-  }
-
-  @media screen and (max-width: 999px) {
-    
-      .section-template--22020828430661__sejour-address-borders-mob {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-      }
-    
-
-    
-  }
-
-  
-    #adresse {
-      scroll-margin-top: 148px
-    }
-  
-</style><div id="adresse">
-  <div class="sejour-address">
-    <div class="sejour-section-container isolate section-template--22020828430661__sejour-address-borders-mob">
-      <div class="sejour-section-container__inner">
-  
-        <div class="section-template--22020828430661__sejour-address-padding section-template--22020828430661__sejour-address-borders">
-  
+    <div className="container">
+      <div className="card">
+        <div className="card__content"></div>
+        <article className="positionCard">
+          <h2 className="positionTitle">Position</h2>
+          <img
+            className="positionImg"
+            src="https://img.freepik.com/photos-gratuite/full-shot-woman-doing-yoga-pose-exterieur_23-2149123080.jpg?w=900&t=st=1715861423~exp=1715862023~hmac=82b3c3d62e2bc037f2eb86f33a21b06f646a157f96a88ff95067a3fd39d57300"
+            alt="a yoga position"
+          />
+          <p className="positionTxt">
+            From a seated position the feet are lifted up so that the thighs are
+            angled about 45-50 degrees relative to the earth. The tailbone is
+            lengthened into the earth and the pubis pulls toward the navel. The
+            shoulder blades are spread across the back and the hands reach
+            around the back of the calves, with legs pulled towards the body.
+            The chin is tipped slightly toward the sternum so that the base of
+            the skull lifts lightly away from the back of the neck. Gaze is
+            forward.
+          </p>
+       
+          {/* <MapContainer
+            center={[51.505, -0.09]}
+            zoom={13}
+            scrollWheelZoom={false}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[51.505, -0.09]}>
+              <Popup>
+                A pretty CSS3 popup. <br /> Easily customizable.
+              </Popup>
+            </Marker>
+          </MapContainer> */}
           
-            <h2 class="sejour-address__title z-suptitle">Où se déroule le séjour et comment s’y rendre</h2>
-          
-  
-          <div class="sejour-address__content">
-  
-            <div class="sejour-address__content-first">
-  
-              
-                <p class="sejour-address__address">A la Villa Caroline au 624 Rte d'Annecy, 74410 Duingt</p>
-              
-  
-              
-                
-                <div class="sejour-address__wrap-image">
-                  <img class="sejour-address__image" src="https://cdn.shopify.com/s/files/1/0677/9761/4911/files/CARTE_2.jpg?v=1674744555" alt="Image address">
-                </div>
-                
-              
-  
-            </div>
-  
-            
-              
-              <div class="sejour-address__content-second">
-                
-                  <p class="sejour-address__transport">
-                    <span class="sejour-address__transport-title">En voiture</span>
-                    <span class="sejour-address__transport-text z-text-small">Depuis Genève, le lieu est situé à environ 1h de voiture (65 km). Possibilité de prendre un taxi depuis la gare d’Annecy TGV qui se trouve à 20 minutes de l’hôtel (13km).</span>
-                  </p>
-                
-                  <p class="sejour-address__transport">
-                    <span class="sejour-address__transport-title">En train</span>
-                    <span class="sejour-address__transport-text z-text-small">Depuis Paris Gare de Lyon environ. 4h30 de trajet.</span>
-                  </p>
-                
-                  <p class="sejour-address__transport">
-                    <span class="sejour-address__transport-title">Le petit plus</span>
-                    <span class="sejour-address__transport-text z-text-small">Profitez du groupe de discussion dédié au séjour pour organiser, si besoin, du covoiturage ou réserver un taxi à plusieurs. Notre équipe se tient disponible pour vous donner des contacts de taxis locaux, n'hésitez pas.</span>
-                  </p>
-                
-              </div>
-            
-  
-          </div>
-  
-        </div>
-  
+        </article>
       </div>
     </div>
-  </div>
-</div>
-  
-
-
-
-</section>
-  )
+  );
 }
 
-export default DailyCard
+// CocktailCard.propTypes = {
+//   drink: PropTypes.shape({
+//     position: PropTypes.string.isRequired,
+//     positionImg: PropTypes.string.isRequired,
+//     positionTxt: PropTypes.string.isRequired,
+//   }).isRequired,
+// };
+
+export default DailyCard;
