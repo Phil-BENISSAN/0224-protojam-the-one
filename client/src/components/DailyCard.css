@@ -1,8 +1,8 @@
 .card {
   margin: auto;
   position: relative;
-  width: 20rem;
-  height: 40rem;
+  width: 22rem;
+  height: 75rem;
   background: linear-gradient(to bottom right, #f4fff0, #82ff8f);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
@@ -31,11 +31,13 @@
 
 .positionImg {
   width: 100%;
+  padding-bottom: 1rem;
 }
 
-.description{
+.paragraphe>p{
   padding: 1rem;
   font-size: var(--fontSize);
+  padding-bottom: 1rem;
 }
 #map {
   height: 180px;

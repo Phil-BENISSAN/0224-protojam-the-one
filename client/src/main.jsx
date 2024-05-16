@@ -1,7 +1,7 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import DailyPage from "./pages/DailyPage.jsx";
 import Home from "./pages/Home.jsx";
 
@@ -22,9 +22,9 @@ const router = createBrowserRouter([
         path: "/:id",
         element: <DailyPage />,
         loader: ({ params }) =>
-          fetch(`http://localhost:8000/${params.id}`)
+          fetch(`http://localhost:8000/`)
             .then((res) => res.json())
-            .then((data) => data)
+            .then((data) => data.postures[params.id-1])
             .catch((err) => console.error(err)),
       },
     ],
