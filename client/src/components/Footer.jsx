@@ -1,7 +1,14 @@
 import React from 'react'
+import { useState } from 'react'; 
 import "./Footer.css"
 
 function Footer() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
   return (
     <footer>
         <div className="parent">
@@ -23,6 +30,52 @@ function Footer() {
 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" fill="#4267B2"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></button>
 </div>
 </div>
+
+<div className="ButtonContainer">
+      <p>Nombre de Poule(s):</p> <p className="counterEggForm"> {count}</p>
+      <button className="btn" onClick={handleClick}>
+  <div className="wrapper">
+    <p className="text">Terminé</p>
+
+    <div className="flower flower1">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+    <div className="flower flower2">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+    <div className="flower flower3">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+    <div className="flower flower4">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+    <div className="flower flower5">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+    <div className="flower flower6">
+      <div className="petal one"></div>
+      <div className="petal two"></div>
+      <div className="petal three"></div>
+      <div className="petal four"></div>
+    </div>
+  </div>
+</button>
+    </div>
     </footer>
   )
 }
