@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -8,27 +7,25 @@ import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
-    // loader: () =>
-    //   fetch("")
-    //     .then((res) => res.json())
-    //     .then((data) => data)
-    //     .catch((error) => console.error(error)),
-    id: "app",
     children: [
       {
         path: "/",
         element: <Home />,
+        loader: () =>
+          fetch("http://localhost:8000/")
+            .then((res) => res.json())
+            .then((postures) => postures.postures)
+            .catch((error) => console.error(error)),
       },
       {
         path: "/:id",
         element: <DailyPage />,
-        // loader: ({ params }) =>
-        //   fetch(`http://localhost:3310/api/cupcakes/${params.id}`)
-        //     .then((res) => res.json())
-        //     .then((data) => data)
-        //     .catch((err) => console.error(err)),
+        loader: ({ params }) =>
+          fetch(`http://localhost:8000/${params.id}`)
+            .then((res) => res.json())
+            .then((data) => data)
+            .catch((err) => console.error(err)),
       },
     ],
   },
@@ -36,8 +33,4 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+root.render(<RouterProvider router={router} />);
