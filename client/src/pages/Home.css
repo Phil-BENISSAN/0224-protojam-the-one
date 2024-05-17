@@ -1,0 +1,19 @@
+
+
+.homeCardContainer{
+display: flex;
+justify-content: center;
+background-image: url("../assets/beau-paysage-bambouseraie-dans-foret-arashiyama-kyoto.jpg");
+background-repeat: repeat;
+background-size: contain;
+}
+.homeTitle{
+    text-align: center;
+    font-family: "Satisfy", cursive;
+}
+.posture-list{
+   list-style-type: none;
+}
+.postureCard{
+    margin-top: 2rem;
+}

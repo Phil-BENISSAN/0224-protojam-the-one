@@ -8,6 +8,11 @@
     margin: 30px 0 20px 20px;
     cursor: pointer;
   }
+  .title{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: "Great Vibes", cursive;
+  }
   
   .bar {
     height: 5px;
@@ -104,6 +109,7 @@
 
   .Logo_yoga {
     height: 5rem;
+    clip-path:circle(50% at 50% 50%);
   }
 
   .header {
