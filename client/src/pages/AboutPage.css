@@ -3,9 +3,10 @@
     padding: 2rem;
     background-color: #f9f9f9;
   }
-  /* .titleMembers{
-    padding-right: 3rem;
-  } */
+   .titleMembers{
+    font-size: 2rem;
+    font-family: var(--secondaryFont);
+  } 
   .team {
     display: flex;
     flex-wrap: wrap;
@@ -20,6 +21,10 @@
     padding: 1rem;
     width: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .aboutTxt{
+    padding:2rem 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .team-member h2 {

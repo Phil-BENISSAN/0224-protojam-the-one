@@ -50,7 +50,7 @@ const MapComponent = () => {
   };
 
   return (
-    <MapContainer center={position} zoom={zoom} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer center={position} zoom={zoom} style={{ height: "45vh", width: "90%",margin:"auto auto 2rem auto"}}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

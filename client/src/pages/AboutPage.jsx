@@ -12,8 +12,8 @@ const teamMembers = [
 const AboutPage = () => {
   return (
     <div className="about-container">
-      <h1 className='titleMembers'>À propos de notre équipe</h1>
-      <p>Nous sommes une équipe dynamique et passionnée composée de six développeurs spécialisés dans le développement front-end et back-end.</p>
+      <h2 className='titleMembers'>À propos de <br/>notre équipe</h2>
+      <p className='aboutTxt'>Nous sommes une équipe dynamique et passionnée composée de six développeurs spécialisés dans le développement front-end et back-end.</p>
       <div className="team">
         {teamMembers.map((member) => (
           <div key={member.id} className="team-member">
