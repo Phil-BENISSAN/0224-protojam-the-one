@@ -1,0 +1,37 @@
+.about-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  /* .titleMembers{
+    padding-right: 3rem;
+  } */
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+     text-align: center;
+  }
+  
+  .team-member p {
+    margin: 0.5rem 0 0;
+    color: #666;
+   
+  }
+  

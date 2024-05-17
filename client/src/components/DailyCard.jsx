@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "../components/DailyCard.css";
+import MapComponent from "./MapComponents";
 
 // import {
 //   MapContainer,
@@ -8,8 +9,6 @@ import "../components/DailyCard.css";
 // } from 'https://cdn.esm.sh/react-leaflet'
 
 function DailyCard({ data }) {
- 
-
   return (
     <div className="card">
       <div className="card__content"></div>
@@ -21,6 +20,7 @@ function DailyCard({ data }) {
           <p className="description">{data.description}</p>
           <h2>Instructions : </h2>
           <p className="instructions">{data.instructions}</p>
+          <MapComponent />
         </div>
       </article>
     </div>

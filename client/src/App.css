@@ -11,6 +11,12 @@
     local("BebasNeue-Regular"),
     url("./fonts/BebasNeue-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Bebas Neue";
+  src:
+    local("BebasNeue-Regular"),
+    url("GreatVibes-Regular.ttf") format("truetype");
+}
 
 :root{
   --whiteColor: #F4FFF0;
@@ -20,6 +26,7 @@
   --tertiaryColor:#5F3D14;
   --primaryFont:"Bebas Neue", "sans serif";
   --secondaryFont:"Pontano Sans", "sans serif";
+  --tertiaryFont:
   --fontSize:1.2rem;
   --titleSize:5rem;
 }

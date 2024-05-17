@@ -4,7 +4,9 @@ import App from "./App.jsx";
 import "./index.css";
 import DailyPage from "./pages/DailyPage.jsx";
 import Home from "./pages/Home.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -29,9 +31,13 @@ const router = createBrowserRouter([
             .catch((err) => console.error(err)),
       },
       {
+        path: "/contact",
+        element: <ContactPage />
+      },
+      {
         path: "/about",
         element: <AboutPage />
-      }
+      },
     ],
   },
 ]);

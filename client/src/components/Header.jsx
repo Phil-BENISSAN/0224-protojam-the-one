@@ -1,4 +1,3 @@
-import React from 'react';
 import './Header.css'; 
 import { Link } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ const Header = () => {
           <ul>
             <li><Link to={"/"}> Home </Link> </li>
             <li><Link to={"/About"}>About </Link></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to={"/Contact"}>Contact</Link></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
