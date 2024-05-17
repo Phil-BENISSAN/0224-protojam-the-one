@@ -41,13 +41,14 @@
   }
   
   .nav li {
+    font-family: var(--primaryFont);
+    font-size: 1.5rem;
     list-style: none;
     padding: 12px 0;
   }
   
   .nav li a {
     color: white;
-    font-size: 20px;
     text-decoration: none;
   }
   
@@ -97,22 +98,22 @@
     transform: translate(-60%,-30%);
   }
 
-  h1 {
-    text-align: center;
-    transform: translate(40%);
-  }
+h1 {
+  text-align: center;
+  transform: translate(40%);
+}
 
-  .logoContainer{
-    display: flex;
-    justify-content: space-between;
-  }
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .Logo_yoga {
-    height: 5rem;
-    clip-path:circle(50% at 50% 50%);
-  }
+.Logo_yoga {
+  height: 5rem;
+  clip-path: circle(50% at 50% 50%);
+}
 
-  .header {
-    max-height: 6rem;
-    background-color: var(--secondaryColor);
-  }
+.header {
+  max-height: 6rem;
+  background-color: var(--secondaryColor);
+}

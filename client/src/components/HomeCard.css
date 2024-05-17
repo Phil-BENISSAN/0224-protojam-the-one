@@ -58,4 +58,12 @@
     border-radius: 0.5rem;
     border: 1px solid rgba(55, 57, 60, 0.3);
   }
-  
+  .heading{
+    text-align: center;
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+  }
+  .postureName{
+    font-size: 1.4rem;
+    font-family: var(--secondaryFont);
+  }

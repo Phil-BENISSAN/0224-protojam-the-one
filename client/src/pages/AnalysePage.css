@@ -1,0 +1,16 @@
+.analyseImageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  gap: 2rem; 
+  width: 100%;
+}
+.tempsEcran{
+    width: 100%;
+}
+.analyseTitle{
+    margin: 2rem;
+    text-align: center;
+    font-family: var(--primaryFont);
+}

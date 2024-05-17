@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import '../pages/ContactPage.css';
+import { useState } from "react";
+import "../pages/ContactPage.css";
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -17,11 +17,12 @@ function ContactPage() {
     }));
   };
 
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form data submitted:", formData);
-    // Add your form submission logic here
-    // Reset the form
+
+  alert(`thanks you for your feeback. Your form has been submitted successfully!`);
+
     setFormData({
       lastname: "",
       firstname: "",
@@ -81,7 +82,9 @@ function ContactPage() {
             required
           />
         </div>
-        <button className="submitBtn" type="submit">Submit</button>
+        <button className="submitBtn" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

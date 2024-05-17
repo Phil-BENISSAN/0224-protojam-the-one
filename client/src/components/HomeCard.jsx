@@ -9,8 +9,8 @@ function HomeCard({ data }) {
           <img src={data.image} alt="posture" />
         </div>
         <div className="content">
-          <h2 className="heading">Jour {data.id}</h2>
-          <h3>{data.nom}</h3>
+          <h2 className="heading">Jour {data.id} 🎋</h2>
+          <h3 className="postureName">{data.nom}</h3>
         </div>
       </div>
     </div>

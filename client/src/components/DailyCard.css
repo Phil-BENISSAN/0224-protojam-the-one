@@ -22,7 +22,7 @@
   border-radius: 50px;
 }
 
-.positionTitle {
+.Title {
   font-size: 2rem;
   font-family: var(--secondaryFont);
   text-align: center;
@@ -41,4 +41,33 @@
 }
 #map {
   height: 180px;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoPoule {
+  width: 10rem;
+}
+
+.NombreDePoule{
+  font-size: 1.5rem;
+}
+.counterEggForm{
+            display: inline-block;
+            width: 100px;
+            height: 150px;
+            background-color: var(--whiteColor);
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+            border-radius: 50% 50% 45% 45%;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
 }
