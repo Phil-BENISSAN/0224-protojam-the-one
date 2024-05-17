@@ -6,7 +6,7 @@ import DailyPage from "./pages/DailyPage.jsx";
 import Home from "./pages/Home.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
-
+import AnalysePage from "./pages/AnalysePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,16 +27,20 @@ const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`http://localhost:8000/`)
             .then((res) => res.json())
-            .then((data) => data.postures[params.id-1])
+            .then((data) => data.postures[params.id - 1])
             .catch((err) => console.error(err)),
       },
       {
-        path: "/contact",
-        element: <ContactPage />
+        path: "/about",
+        element: <AboutPage />,
       },
       {
-        path: "/about",
-        element: <AboutPage />
+        path: "/contact",
+        element: <ContactPage />,
+      },
+      {
+        path: "/analyse",
+        element: <AnalysePage />,
       },
     ],
   },
