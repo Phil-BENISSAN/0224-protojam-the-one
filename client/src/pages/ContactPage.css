@@ -29,7 +29,9 @@ body {
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #333;font-family: "Great Vibes", cursive;font-weight: 600;
+  color: #333;
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
   font-size: 1.8rem;
 }
 

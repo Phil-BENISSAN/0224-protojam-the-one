@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <>
-      <h2 className="homeTitle">🎋 Déconnexion numérique 🎋</h2>
+      <h2 className="homeTitle">🎋 Déconnexion urbaine 🎋</h2>
       <h2 className="homeTitle">🎍 reconnexion spirituelle 🎍</h2>
       <div className="homeCardContainer">
         <ul className="posture-list" id="posture-list">

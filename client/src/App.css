@@ -1,42 +1,24 @@
-@font-face {
-  font-family: "Pontano Sans";
-  src:
-    local("PontanoSans-Regular"),
-    url("./fonts/PontanoSans-Regular.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-@font-face {
-  font-family: "Bebas Neue";
-  src:
-    local("BebasNeue-Regular"),
-    url("./fonts/BebasNeue-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Bebas Neue";
-  src:
-    local("BebasNeue-Regular"),
-    url("GreatVibes-Regular.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-:root{
-  --whiteColor: #F4FFF0;
+:root {
+  --whiteColor: #f4fff0;
   --blackColor: #131313;
-  --primaryColor:#457813;
-  --secondaryColor:#82FF8F;
-  --tertiaryColor:#5F3D14;
-  --primaryFont:"Bebas Neue", "sans serif";
-  --secondaryFont:"Pontano Sans", "sans serif";
-  --tertiaryFont:
-  --fontSize:1.2rem;
-  --titleSize:5rem;
+  --primaryColor: #457813;
+  --secondaryColor: #82ff8f;
+  --tertiaryColor: #5f3d14;
+  --primaryFont: "Great Vibes", "cursive", "sans serif";
+  --secondaryFont: "Satisfy", "cursive","sans serif";
+  --fontSize: 1.2rem;
+  --titleSize: 5rem;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-body{
+body {
   background-color: var(--whiteColor);
 }
