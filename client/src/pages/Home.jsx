@@ -1,91 +1,40 @@
-// import { Link, useRouteLoaderData } from "react-router-dom";
 import HomeCard from "../components/HomeCard";
+import { Link, useLoaderData } from "react-router-dom";
 import "./Home.css";
 
-const postureExemple = [
-  {
-    id: 1,
-    nom: "Tadasana (Montagne)",
-    description:
-      "Tadasana, également connue sous le nom de posture de la montagne, est une position de yoga debout qui favorise l'alignement et la stabilité. Elle renforce les jambes, la colonne vertébrale et améliore la posture.",
-  },
-  {
-    id: 2,
-    nom: "Adho Mukha Svanasana (Chien tête en bas)",
-    description:
-      "Adho Mukha Svanasana, ou la posture du chien tête en bas, étire et renforce simultanément plusieurs parties du corps, y compris les bras, les épaules, le dos et les jambes. Elle aide également à soulager le stress et à calmer l'esprit.",
-  },
-  {
-    id: 3,
-    nom: "Balasana (Posture de l'enfant)",
-    description:
-      "Balasana, souvent appelée la posture de l'enfant, est une position de repos qui étire doucement le dos, les hanches et les cuisses. Elle favorise la relaxation et aide à soulager la tension dans le corps et l'esprit.",
-  },
-  {
-    id: 4,
-    nom: "Virabhadrasana I (Guerrier I)",
-    description:
-      "Virabhadrasana I, ou la posture du guerrier I, renforce les jambes, les bras et le tronc tout en améliorant l'équilibre et la concentration. Elle inspire confiance et détermination.",
-  },
-  {
-    id: 5,
-    nom: "Utkatasana (Chaise)",
-    description:
-      "Utkatasana, connue sous le nom de posture de la chaise, renforce les muscles des jambes, des fesses et du dos tout en améliorant l'équilibre et la stabilité. Elle active également le centre du corps et stimule la circulation sanguine.",
-  },
-  {
-    id: 6,
-    nom: "Sukhasana (Posture facile)",
-    description:
-      "Sukhasana, ou la posture facile, est une position assise de méditation qui favorise le calme et la concentration. Elle étire les hanches, le dos et les épaules tout en permettant une respiration profonde et détendue.",
-  },
-  {
-    id: 7,
-    nom: "Bhujangasana (Cobra)",
-    description:
-      "Bhujangasana, ou la posture du cobra, renforce les muscles du dos tout en ouvrant la poitrine et les épaules. Elle stimule également les organes abdominaux et aide à soulager le stress et la fatigue.",
-  },
-  {
-    id: 8,
-    nom: "Paschimottanasana (Pince assise)",
-    description:
-      "Paschimottanasana, également connue sous le nom de pince assise, étire doucement la colonne vertébrale, les ischio-jambiers et les muscles du dos. Elle favorise la relaxation et calme l'esprit.",
-  },
-  {
-    id: 9,
-    nom: "Vrikshasana (Arbre)",
-    description:
-      "Vrikshasana, ou la posture de l'arbre, développe l'équilibre, la concentration et la force des jambes. Elle renforce également les chevilles et les muscles du pied tout en améliorant la posture et la stabilité émotionnelle.",
-  },
-  {
-    id: 10,
-    nom: "Savasana (Posture du cadavre)",
-    description:
-      "Savasana, également appelée la posture du cadavre, est une position de relaxation finale qui permet au corps et à l'esprit de se détendre profondément. Elle favorise la régénération et la clarté mentale.",
-  },
-];
-
 function Home() {
-  // const posturesData = useRouteLoaderData();
+  // const postureData = [{
+  //   "id": 1,
+  //   "nom": "La posture de la montagne – Tadasana",
+  //   "image": "https://www.ataraksy.com/wp-content/uploads/2019/02/La-posture-de-la-montagne-tadasana.jpg",
+  //   "video": "https://www.ataraksy.com/yoga-debutant-10-postures-maitriser/",
+  //   "description": "Debout, elle vous apprend à être bien stable et à ressentir la terre sous vos pieds. La posture de la montagne peut sembler assez simple et on est tenté de se dire qu’on « simplement debout », mais en fait ce n’est pas aussi simple que cela et les débutants devraient vite s’en rendre compte.",
+  //   "instructions": "Commencez par vous tenir debout, les pieds joints. Enfoncez vos dix orteils dans le sol tout en les écartant. Engagez vos quadriceps pour relever vos genoux. Rentrez et remontez vos abdominaux en soulevant votre poitrine et en rentrant vos épaules. Sentez vos omoplates venir l’une vers l’autre et ouvrez votre poitrine. Faites attention de bien garder vos paumes vers l’intérieur, face à votre corps. Ensuite, imaginez une corde tirant votre tête vers le plafond en inspirant profondément. Tenez la posture pendant 5 à 8 respirations."
+  // },
+  // {
+  //   "id": 2,
+  //   "nom": "Posture du chien tête en bas",
+  //   "image": "https://www.ataraksy.com/wp-content/uploads/2019/02/posture-du-chien-tête-en-bas.jpg",
+  //   "video": "https://www.ataraksy.com/yoga-debutant-10-postures-maitriser/",
+  //   "description": "Cette posture étire le dos, les épaules, les ischio-jambiers et les mollets tout en renforçant les bras et les jambes.",
+  //   "instructions": "Commencez à quatre pattes, les mains alignées avec les épaules et les genoux avec les hanches. Écartez les doigts et appuyez fermement dans vos paumes. Soulevez vos hanches vers le plafond en redressant vos jambes autant que possible. Gardez votre tête entre vos bras, les oreilles alignées avec vos bras. Maintenez la posture en respirant profondément pendant 5 à 8 respirations."
+  // }]
+  const postureData = useLoaderData();
 
   return (
     <>
-      {/* <ul className="posture-list" id="posture-list">
-        {postureExemple.map((posture) => (
-          <li className="postureCard" key={posture.id}>
-            <Link  to={`/${posture.id}`}>
-             <HomeCard data={posture}/>
-            </Link>
-          </li>
-        ))}
-      </ul> */}
+      <h2 className="homeTitle">🎋 Déconnexion urbaine 🎋</h2>
+      <h2 className="homeTitle">🎍 reconnexion spirituelle 🎍</h2>
       <div className="homeCardContainer">
         <ul className="posture-list" id="posture-list">
-          {postureExemple.map((posture) => (
-            <li className="postureCard" key={posture.id}>
-              <HomeCard data={posture} />
-            </li>
-          ))}
+          {postureData &&
+            postureData.map((posture) => (
+              <li className="postureCard" key={posture.id}>
+                <Link to={`/${posture.id}`}>
+                  <HomeCard data={posture} />
+                </Link>
+              </li>
+            ))}
         </ul>
       </div>
     </>

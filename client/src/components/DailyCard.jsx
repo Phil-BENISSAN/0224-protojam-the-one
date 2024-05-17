@@ -1,9 +1,39 @@
-import React from 'react'
+import PropTypes from "prop-types";
+import "../components/DailyCard.css";
+import MapComponent from "./MapComponents";
 
-function DailyCard() {
+// import {
+//   MapContainer,
+//   TileLayer,
+//   Marker,Popup
+// } from 'https://cdn.esm.sh/react-leaflet'
+
+function DailyCard({ data }) {
   return (
-    <div>DailyCard</div>
-  )
+    <div className="card">
+      <div className="card__content"></div>
+      <article className="positionCard">
+        <h2 className="positionTitle">{data.nom}</h2>
+        <img className="positionImg" src={data.image} alt="a yoga position" />
+        <div className="paragraphe">
+          <h2>Description</h2>
+          <p className="description">{data.description}</p>
+          <h2>Instructions : </h2>
+          <p className="instructions">{data.instructions}</p>
+          <MapComponent />
+        </div>
+      </article>
+    </div>
+  );
 }
 
-export default DailyCard
+DailyCard.propTypes = {
+  data: PropTypes.shape({
+    nom: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    instructions: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default DailyCard;

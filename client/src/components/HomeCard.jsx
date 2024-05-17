@@ -1,11 +1,12 @@
 import "./HomeCard.css";
+import PropTypes from "prop-types";
 
-function HomeCard({data}) {
+function HomeCard({ data }) {
   return (
     <div className="card-container">
       <div className="card">
         <div className="img-content">
-            <img src="src/assets/3-essential-yoga-poses-worth-daily.jpg" alt="" />
+          <img src={data.image} alt="posture" />
         </div>
         <div className="content">
           <h2 className="heading">Jour {data.id}</h2>
@@ -15,5 +16,13 @@ function HomeCard({data}) {
     </div>
   );
 }
+
+HomeCard.propTypes = {
+  data: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    nom: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
+};
 
 export default HomeCard;
