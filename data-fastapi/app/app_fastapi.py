@@ -9,7 +9,7 @@ def fn_fast_api():
 
 # -------  INSERER VOTRE CODE ICI -----------------
     
-    return {{
+    return {
   "postures": [
     {
         "id": 1,
@@ -240,13 +240,17 @@ def fn_fast_api():
         "id": 28,
         "nom": "La posture de l’enfant Bālāsana",
         "image": "https://www.ataraksy.com/wp-content/uploads/2019/02/La-posture-de-l’enfant-Bālāsana.jpg",
-        "video": "https://www.facebook.com/plugins/like.php?href=https://www.ataraksy.com/yoga-debutant-10-postures-maitriser/&layout=button_count&show_faces=false&width=105&action=like&colorscheme=light&height=21",
         "description": "Cette posture relaxante étire le dos, les hanches et les cuisses, tout en calmant l'esprit.",
         "instructions": "Agenouillez-vous sur le sol, les gros orteils se touchant et les genoux écartés. Asseyez-vous sur vos talons et allongez-vous vers l'avant, en étendant vos bras devant vous ou le long de votre corps. Posez votre front sur le sol et respirez profondément. Maintenez cette position aussi longtemps que vous le souhaitez.",
         "niveau": "débutant"
     }
-  ],
-  "bienfaits": [
+  ]
+}
+@app.get('/bienfaits')
+def fn_fast_api():
+
+     return {
+    "bienfaits": [
     "1 - Amélioration de la flexibilité : Pratiquer le yoga régulièrement aide à étirer les muscles et les articulations, augmentant ainsi la flexibilité et réduisant les risques de blessures.",
     "2 - Renforcement musculaire : Les différentes postures de yoga renforcent les muscles du corps, en particulier ceux du tronc, des bras et des jambes, améliorant la force globale et la stabilité.",
     "3 - Réduction du stress et de l'anxiété : Le yoga inclut des techniques de respiration et de méditation qui aident à calmer l'esprit, réduisant ainsi le stress et l'anxiété.",
@@ -260,12 +264,6 @@ def fn_fast_api():
     "En somme, le yoga est une pratique holistique qui peut avoir des effets bénéfiques sur de nombreux aspects de la santé et du bien-être."
   ]
 }
-
-  
-    
-}
-
-
 # ---------------- FIN DE TON CODE ----------------
 #__________________________________________________
 
